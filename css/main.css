@@ -1,4 +1,8 @@
 
+* {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+}
+
 .border-blck{
 	border: 2px solid #000;
 	border-radius: 8px;
@@ -6,4 +10,49 @@
 
 .container-fluid {
 	padding: 0 4rem;
+}
+
+.fr2-col{
+	border: 2px solid #000;
+	
+}
+.empty-p{
+	border-bottom: 1px solid #000;
+}
+
+.border-blck2{
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.border-right{
+	border-right: 2px solid #000 !important;
+}
+
+.border{
+	border: 2px solid #000 !important;
+}
+
+thead{
+	background: #006937;
+	color: #fff;
+	font-size: 1.1rem;
+	margin: 0;
+}
+
+table.table tbody tr td,
+table.table thead tr th,
+table.table thead {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+
+.border-lines{
+	border: 2px solid #000;
+}
+
+.table{
+	margin-bottom: 0px !important;
 }
