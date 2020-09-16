@@ -1,0 +1,9 @@
+
+.border-blck{
+	border: 2px solid #000;
+	border-radius: 8px;
+}
+
+.container-fluid {
+	padding: 0 4rem;
+}
