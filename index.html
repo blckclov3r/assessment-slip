@@ -5,9 +5,10 @@
     <title>assessment slip</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+
 </head>
 <body>
-    <div class="container my-5">
+    <div class="container my-5" id="mContainer">
         <div class="row d-flex justify-content-between align-items-center">
             <div class="col-4">
                 <h4 class="hdata">Assesment Slip</h4>
@@ -21,11 +22,11 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-8 fr1-col align-items-center px-4">
+            <div class="col-8 fr1-col align-items-center px-4 ">
                 <!-- student number-->
                 <div class="studentNo d-flex align-items-start">
                     <div class="label">
-                        Student No: 
+                        Student No:
                     </div>
                     <div class="data pl-3">
                         123456789
@@ -55,6 +56,10 @@
                     <div class="col-4">
                         <p class="text-center">Term: <span class="fdata">2nd Sem.</span></p>
                     </div>
+                </div>
+
+                <div class="row px-4">
+                    <p>Lorem Ipsum</p>
                 </div>
 
             </div>
@@ -89,11 +94,10 @@
 
         <div class="row justify-content-center position-relative">
 
-            <img class="img-fluid uvseal" src="uvseal.png" />
 
             <div class="col-12  px-0">
                 <table class="table table-bordered table-hover">
-                    <thead>
+                    <thead class="">
                         <tr>
                             <th scope="col">Date</th>
                             <th scope="col">Transaction Type</th>
@@ -103,7 +107,7 @@
                             <th scope="col">Balance</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="mTable">
                         <tr>
                             <th scope="row">16/06/20</th>
                             <td class="fdata">Enrollment</td>
@@ -188,11 +192,11 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan=4 class="p-3">
-                                <span class="fdata">Please pay the following Lorem ipsum dolor specified terms.</span>
+                            <td colspan=4 class="">
+                                <span class="">Please pay the following Lorem ipsum dolor specified terms.</span>
 
                             </td>
-                            <td class="text-center pt-3" style="background: #006937; color: #fff;">Remaining Balance</td>
+                            <td class="text-center" style="background: #006937; color: #fff;">Remaining Balance</td>
                             <td class="fdata">₱0.00</td>
                         </tr>
                         <tr>
@@ -211,16 +215,24 @@
                     </tfoot>
                 </table>
             </div>
+            <div id="uvseal" style="background: url('uvseal.png'); background-size: cover; background-repeat: no-repeat;  width: 100px; height: 100px; z-index: 999; position: absolute; opacity: .2; top: 10%; left: 50%;"></div>
+
         </div>
 
- 
+
+    </div>
+
+    <div class="download py-5 text-center">
+        <button class="btn btn-info text-center" onclick="screenshot();">Click Me!</button>
     </div>
 
 
-    
 
 
 
-    <script src="js/bootstrap.min.js" />
-</body>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/dlscript.js"></script>
 </html>

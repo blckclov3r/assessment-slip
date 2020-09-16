@@ -2,22 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 
-* {
-	font-family: "Titillium Web", sans-serif;
-}
-
-
-	*,
-	*::before,
-	*::after {
+s*,
+*::before,
+*::after {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
-	}
- 
+}
 
-.mtable {
-	position: relative;
+body {
+	font-family: "Titillium Web", sans-serif;
+}
+
+.mTable {
+	border: 2px solid #666 !important;
+	border-bottom: none !important;
+}
+
+table tfoot {
+	border: 2px solid #666 !important;
+	border-top: none !important;
 }
 
 
@@ -32,20 +36,19 @@ img.uvseal {
 
 
 .border-blck {
-	border: 2px solid #333;
+	border: 2px solid #666;
 }
 
-.container-fluid {
-	padding: 0 4rem;
+.container {
+	padding: 1rem 2rem; 
+	border-radius: 8px;
 	background: #fff;
 }
 
 .fr1-col {
-	border: 2px solid #333;
+	border: 2px solid #666;
 	border-bottom: none;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-top-right-radius: 10px;
+	
 }
 
 
@@ -63,7 +66,6 @@ table td{
 	border-top: 2px solid #000;
 	border-left: 2px solid #000;
 	border-right: 2px solid #000;
-	border-radius: 18px 18px 18px 0px;
 	border-left: none;
 }
 
@@ -75,18 +77,14 @@ table td{
 	border: 2px solid #ddd !important;
 }
 
-thead{
+thead {
 	background: #006937;
 	color: #fff;
 	font-size: 1.1rem;
-	margin: 0;
+	
+	border: 3px solid #006937;
 }
 
-
-
-.border-lines{
-
-}
 
 
 .studentNo{
@@ -118,13 +116,11 @@ thead{
 .fr2-col {
 	border-left: none !important;
 	border-bottom: none !important;
-	border: 2px solid #333;
-	border-bottom-left-radius: 10px !important;
-	border-radius: 10px !important;
+	border: 2px solid #666;
 }
 
 td.text-right{
 	background: #eee;
 	margin-top: 0;
-	border-top-left-radius: 10px;
 }
+
