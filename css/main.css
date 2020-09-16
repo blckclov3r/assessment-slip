@@ -1,21 +1,60 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+
 * {
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+	font-family: "Titillium Web", sans-serif;
 }
 
-.border-blck{
-	border: 2px solid #000;
-	border-radius: 8px;
+
+	*,
+	*::before,
+	*::after {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+ 
+
+.mtable {
+	position: relative;
+}
+
+
+img.uvseal {
+	width: 200px;
+	height: 200px;
+	opacity: .1;
+	position: absolute;
+	top: 24%;
+	left: 40%;
+}
+
+
+.border-blck {
+	border: 2px solid #333;
 }
 
 .container-fluid {
 	padding: 0 4rem;
+	background: #fff;
 }
 
-.fr2-col{
-	border: 2px solid #000;
-	
+.fr1-col {
+	border: 2px solid #333;
+	border-bottom: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
+
+
+table td{
+	font-family: Consolas !important;
+}
+
+
+
 .empty-p{
 	border-bottom: 1px solid #000;
 }
@@ -24,6 +63,8 @@
 	border-top: 2px solid #000;
 	border-left: 2px solid #000;
 	border-right: 2px solid #000;
+	border-radius: 18px 18px 18px 0px;
+	border-left: none;
 }
 
 .border-right{
@@ -31,7 +72,7 @@
 }
 
 .border{
-	border: 2px solid #000 !important;
+	border: 2px solid #ddd !important;
 }
 
 thead{
@@ -41,18 +82,49 @@ thead{
 	margin: 0;
 }
 
-table.table tbody tr td,
-table.table thead tr th,
-table.table thead {
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-}
 
 
 .border-lines{
-	border: 2px solid #000;
+
 }
 
-.table{
-	margin-bottom: 0px !important;
+
+.studentNo{
+	margin-top: 1rem;
+}
+.studentNo .label{
+
+}
+
+
+.studentNo .data {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+
+.fdata{
+	color: #333;
+	font-weight: 600;
+}
+
+
+.hdata {
+	color: #006937;
+	font-weight: 600;
+
+}
+
+.fr2-col {
+	border-left: none !important;
+	border-bottom: none !important;
+	border: 2px solid #333;
+	border-bottom-left-radius: 10px !important;
+	border-radius: 10px !important;
+}
+
+td.text-right{
+	background: #eee;
+	margin-top: 0;
+	border-top-left-radius: 10px;
 }

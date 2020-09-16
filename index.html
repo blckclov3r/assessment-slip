@@ -7,77 +7,77 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-    <div class="container-fluid py-5">
-        <div class="row d-flex justify-content-between">
+    <div class="container my-5">
+        <div class="row d-flex justify-content-between align-items-center">
             <div class="col-4">
-                <h5>Assesment Slip</h5>
-                <p>Lorem ipsum</p>
+                <h4 class="hdata">Assesment Slip</h4>
+                <p class="hdata">Lorem ipsum</p>
             </div>
             <div class="col-4">
-                <h4 class="text-right">UNIVERSITY OF THE VISAYAS</h4>
-                <h5 class="text-right">MINGLANILLA CAMPUS</h5>
-                <p class="text-right">LOREM IPSUMLOREM IPSUM</p>
+                <h4 class="text-right hdata">UNIVERSITY OF THE VISAYAS</h4>
+                <h5 class="text-right hdata">MINGLANILLA CAMPUS</h5>
+                <p class="text-right hdata">LOREM IPSUMLOREM IPSUM</p>
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-8 border-blck fr2-col align-items-center">
+            <div class="col-8 fr1-col align-items-center px-4">
                 <!-- student number-->
-                <div class="row">
-                    <div class="col-2">
-                        <p>Student No: </p>
+                <div class="studentNo d-flex align-items-start">
+                    <div class="label">
+                        Student No: 
                     </div>
-                    <div class="col-3   ">
-                        <p> 123456789</p>
+                    <div class="data pl-3">
+                        123456789
                     </div>
                 </div>
                 <!-- first & last name-->
-                <div class="row d-flex justify-content-between">
+                <div class="row d-flex justify-content-between pt-3">
                     <div class="col-3">
-                        <h5>Doe</h5>
+                        <h4 class="mb-0 fdata">Doe</h4>
                         <p>first</p>
                     </div>
                     <div class="col-3">
-                        <h5>John</h5>
-                        <p class="text-start">last</p>
+                        <h4 class="mb-0 fdata text-center">John</h4>
+                        <p class="text-start text-center">last</p>
                     </div>
                     <div class="col-2">
-                        <h5>D</h5>
-                        <p class="text-start">M.I</p>
+                        <h4 class="mb-0 fdata text-right">D</h4>
+                        <p class="text-start text-right">M.I</p>
                     </div>
                 </div>
 
                 <!-- year,section & term-->
                 <div class="row justify-content-start">
-                    <div class="col-6">
-                        <p>Year & Sec: </p>
+                    <div class="col-5">
+                        <p>Year & Sec: <span class="fdata">XIII BSECPEEE</span></p>
                     </div>
-                    <div class="col-6">
-                        <p class="text-center">Term: </p>
+                    <div class="col-4">
+                        <p class="text-center">Term: <span class="fdata">2nd Sem.</span></p>
                     </div>
                 </div>
 
             </div>
 
 
-            <div class="col-4 border-blck2 px-0">
-                <table class="table table">
-                    <tbody>
+            <div class="col-4 p-0 fr2-col">
+                <table class="table table-hover h-100">
+                    <tbody class="justify-content-center align-items-center">
                         <tr>
-                            <td class="text-right"><span>lorem 1</span></td>
-                            <td>&nbsp;</td>
+                            <td class="text-right fdata"><span>Back Account</span></td>
+                            <td>₱0.00</td>
                         </tr>
                         <tr>
-                            <td class="text-right"><span>lorem 1</span></td>
-                            <td>&nbsp;</td>
+                            <td class="text-right fdata"><span>lorem 1</span></td>
+                            <td>????</td>
                         </tr>
                         <tr>
-                            <td class="text-right"><span>lorem 1</span></td>
-                            <td>&nbsp;</td>
+                            <td class="text-right fdata"><span>lorem 1</span></td>
+                            <td>????</td>
                         </tr>
                         <tr>
-                            <td class="text-right"><span>lorem 1</span></td>
-                            <td>&nbsp;</td>
+                            <td class="text-right fdata"><span>lorem 1</span></td>
+                            <td>????</td>
                         </tr>
                     </tbody>
                 </table>
@@ -87,8 +87,11 @@
         </div>
 
 
-        <div class="row justify-content-center">
-            <div class="col-12 border-lines px-0">
+        <div class="row justify-content-center position-relative">
+
+            <img class="img-fluid uvseal" src="uvseal.png" />
+
+            <div class="col-12  px-0">
                 <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
@@ -102,53 +105,102 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">16/09/20</th>
-                            <td>Enrollement</td>
-                            <td>CITUV111719</td>
-                            <td>ZXCV</td>
-                            <td>₱111.999</td>
-                            <td>₱111.999</td>
+                            <th scope="row">16/06/20</th>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱100.00</td>
+                            <td class="fdata">₱1000.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16/07/20</th>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱100.00</td>
+                            <td class="fdata">₱900.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16/08/20</th>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱100.00</td>
+                            <td class="fdata">₱800.00</td>
                         </tr>
                         <tr>
                             <th scope="row">16/09/20</th>
-                            <td>Enrollement</td>
-                            <td>CITUV111719</td>
-                            <td>ZXCV</td>
-                            <td>₱222.999</td>
-                            <td>₱222.999</td>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱800.00</td>
+                            <td class="fdata">₱0.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16/08/20</th>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱100.00</td>
+                            <td class="fdata">₱800.00</td>
                         </tr>
                         <tr>
                             <th scope="row">16/09/20</th>
-                            <td>Enrollement</td>
-                            <td>CITUV111719</td>
-                            <td>ZXCV</td>
-                            <td>₱333.999</td>
-                            <td>₱333.999</td>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱800.00</td>
+                            <td class="fdata">₱0.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16/08/20</th>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱100.00</td>
+                            <td class="fdata">₱800.00</td>
                         </tr>
                         <tr>
                             <th scope="row">16/09/20</th>
-                            <td>Enrollement</td>
-                            <td>CITUV111719</td>
-                            <td>ZXCV</td>
-                            <td>₱444.999</td>
-                            <td>₱444.999</td>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱800.00</td>
+                            <td class="fdata">₱0.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16/08/20</th>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱100.00</td>
+                            <td class="fdata">₱800.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16/09/20</th>
+                            <td class="fdata">Enrollment</td>
+                            <td class="fdata">CITUV111719</td>
+                            <td class="fdata">ZXCV</td>
+                            <td class="fdata">₱800.00</td>
+                            <td class="fdata">₱0.00</td>
                         </tr>
 
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan=4>
-                                <span>Please pay the following Lorem ipsum dolor sit amet,  elit. Nunc id.</span>
-                           
+                            <td colspan=4 class="p-3">
+                                <span class="fdata">Please pay the following Lorem ipsum dolor specified terms.</span>
+
                             </td>
-                            <td >Remaining Balance</td>
-                            <td >₱999.999</td>
+                            <td class="text-center pt-3" style="background: #006937; color: #fff;">Remaining Balance</td>
+                            <td class="fdata">₱0.00</td>
                         </tr>
                         <tr>
                             <td colspan="4">
-                                <h5>1st Examination Period Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id.</h5>
-                                <h5>1st Examination Period Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id.</h5>
-                                <h5>1st Examination Period Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id.</h5>
+                                <br />
+                                <h5 class="fdata">1st Examination Period OK To Take Exam</h5>
+                                <h5 class="fdata">2nd Examination Period OK To Take Exam</h5>
+                                <h5 class="fdata">3rd Examination Period OK To Take Exam</h5>
                             </td>
                             <td colspan="2" class="text-center">
                                 <br /> <br /> <br />
@@ -165,7 +217,7 @@
     </div>
 
 
-
+    
 
 
 
