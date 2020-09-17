@@ -2,26 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 
-s*,
-*::before,
-*::after {
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-}
 
 body {
 	font-family: "Titillium Web", sans-serif;
+	background: #ddd;
 }
 
-.mTable {
-	border: 2px solid #666 !important;
-	border-bottom: none !important;
-}
 
-table tfoot {
-	border: 2px solid #666 !important;
-	border-top: none !important;
+
+	*,
+	*::before,
+	*::after {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+ 
+
+.mtable {
+	position: relative;
 }
 
 
@@ -36,19 +35,29 @@ img.uvseal {
 
 
 .border-blck {
-	border: 2px solid #666;
+	border: 2px solid #999;
 }
 
-.container {
-	padding: 1rem 2rem; 
-	border-radius: 8px;
+.container-fluid {
+	padding: 0 4rem;
 	background: #fff;
+
+
+}
+
+.container{
+	margin: 0px auto;
+	padding: 1rem 2.3rem;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
 }
 
 .fr1-col {
-	border: 2px solid #666;
+	border: 2px solid #999;
+	border-right: none;
 	border-bottom: none;
-	
+
 }
 
 
@@ -66,6 +75,7 @@ table td{
 	border-top: 2px solid #000;
 	border-left: 2px solid #000;
 	border-right: 2px solid #000;
+
 	border-left: none;
 }
 
@@ -77,14 +87,18 @@ table td{
 	border: 2px solid #ddd !important;
 }
 
-thead {
+thead{
 	background: #006937;
 	color: #fff;
 	font-size: 1.1rem;
-	
-	border: 3px solid #006937;
+	margin: 0;
 }
 
+
+
+.border-lines{
+
+}
 
 
 .studentNo{
@@ -101,7 +115,7 @@ thead {
 }
 
 
-.fdata{
+.fdata {
 	color: #333;
 	font-weight: 600;
 }
@@ -110,17 +124,38 @@ thead {
 .hdata {
 	color: #006937;
 	font-weight: 600;
-
+	letter-spacing: 1px;
 }
 
 .fr2-col {
 	border-left: none !important;
 	border-bottom: none !important;
-	border: 2px solid #666;
+	border: 2px solid #999;
 }
 
-td.text-right{
-	background: #eee;
+td.text-right {
+	background: #ececec;
 	margin-top: 0;
 }
 
+thead{
+	border-left: 2px solid #006937;
+	border-right: 2px solid #006937;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+tbody {
+	border-left: 2px solid #999;
+	border-right: 2px solid #999;
+}
+
+tfoot {
+	border-left: 2px solid #999;
+	border-right: 2px solid #999;
+	border-bottom: 2px solid #999;
+}
+
+.mTable{
+	border: none;
+}
