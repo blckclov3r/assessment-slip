@@ -86,7 +86,7 @@ table td{
 }
 
 thead {
-	background: #03b549;
+	background: rgba(0,105,55,1);
 	color: #fff;
 	margin: 0;
 	font-size: .9rem !important;
@@ -102,8 +102,6 @@ thead tr th{
 
 .studentNo{
 	margin-top: 1rem;
-}
-.studentNo .label{
 
 }
 
@@ -280,11 +278,11 @@ tfoot {
 
 
 .table > tbody > tr > td {
-	border-right: 2px solid #03b549 !important;
+	border-right: 2px solid #006937 !important;
 }
 
 .table > tbody > tr > th {
-	border-right: 2px solid #03b549 !important;
+	border-right: 2px solid #006937 !important;
 }
 
 .b-bottom {
@@ -309,4 +307,10 @@ tfoot {
 .td-p{
 	font-size: .9rem;
 	font-weight: 600;
+}
+
+.fr-p{
+	font-weight: 600;
+	color: #666;
+	font-size: .8rem;
 }
