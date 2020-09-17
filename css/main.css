@@ -55,9 +55,7 @@ img.uvseal {
 
 .fr1-col {
 	border: 2px solid #999;
-	border-right: none;
-	border-bottom: none;
-
+	margin-bottom: 3rem;
 }
 
 
@@ -137,10 +135,14 @@ thead tr th{
 	border: 2px solid #999;
 }
 
+.fr2-col td{
+	padding: 0 1rem;
+	font-size: .9rem;
+}
 
 .fr3 {
-	background: #DEFCC0;
-	font-size: 14px;
+	background: #ececec;
+	
 }
 
 thead {
@@ -153,6 +155,8 @@ thead {
 tbody {
 	border-left: 2px solid #999;
 	border-right: 2px solid #999;
+	font-family: Consolas;
+	font-weight: 500 !important;
 }
 
 tfoot {
@@ -169,6 +173,7 @@ tfoot {
 	background-color: #19764A;
 	color: #fff;
 }
+
 
 
 
@@ -207,12 +212,12 @@ tfoot {
 	color: #333
 }
 
-	.text:before {
+.text:before {
 		content: '\f15c';
 		position: absolute;
 		font: 16pt FontAwesome;
 		transform: translate(-28px, 7px);
-	}
+}
 
 	.text:after {
 		/* content: '(Slip)'*/;
@@ -238,14 +243,24 @@ tfoot {
 	transition: .2s;
 }
 
-	.field:hover {
+.field:hover {
 		background: #43A047
-	}
-
-
 }
 
 
 
+
+.row .sr2-p {
+	border: 2px solid #333;
+	border-bottom: none;
+	position: absolute;
+	left: 0;
+	margin-bottom: 0;
+	bottom: 0;
+	margin-left: 2px;
+	display: block;
+	padding: 4px 1rem;
+	border-top-right-radius: 18px;
+}
 
 
