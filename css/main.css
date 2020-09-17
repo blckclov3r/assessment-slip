@@ -133,12 +133,13 @@ thead{
 	border: 2px solid #999;
 }
 
-td.text-right {
-	background: #ececec;
-	margin-top: 0;
+
+.fr3 {
+	background: #DEFCC0;
+	font-size: 14px;
 }
 
-thead{
+thead {
 	border-left: 2px solid #006937;
 	border-right: 2px solid #006937;
 	padding-left: 4px;
@@ -158,4 +159,12 @@ tfoot {
 
 .mTable{
 	border: none;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+	background-color: #19764A;
+	color: #fff;
+}
+.ready2take {
+	background: #DEFCC0;
 }

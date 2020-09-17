@@ -9,22 +9,7 @@ $(document).ready(function () {
     };
 
     $("#mButton").click(function () {
-       /* var doc = new jsPDF();
-        doc.fromHTML($("#target").html(), 0, 0, {
-            "width": 100,
-            "elementHandlers": specialElementHandlers
-        });
-        doc.save("save-file.pdf"); */
-
-      /*  html2canvas(document.getElementById("mContainer")).then(function (canvas) {
-            var link = document.createElement("a");
-            document.body.appendChild(link);
-            link.download = "uv-slip.jpg";
-            link.href = canvas.toDataURL();
-            link.target = '_blank';
-            link.click();
-        }); */
-
+    
         var container = document.getElementById("mContainer"); // full page 
         html2canvas(container, { allowTaint: true }).then(function (canvas) {
 
