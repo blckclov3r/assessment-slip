@@ -9,8 +9,23 @@ $(document).ready(function () {
     };
 
     $("#mButton").click(function () {
-    
-        var container = document.getElementById("mContainer"); // full page 
+       /* var doc = new jsPDF();
+        doc.fromHTML($("#target").html(), 0, 0, {
+            "width": 100,
+            "elementHandlers": specialElementHandlers
+        });
+        doc.save("save-file.pdf"); */
+
+        html2canvas(document.getElementById("mContainer")).then(function (canvas) {
+            var link = document.createElement("a");
+            document.body.appendChild(link);
+            link.download = "uv-slip.jpg";
+            link.href = canvas.toDataURL();
+            link.target = '_blank';
+            link.click();
+        }); 
+
+       /* var container = document.getElementById("target");; // full page 
         html2canvas(container, { allowTaint: true }).then(function (canvas) {
 
             var link = document.createElement("a");
@@ -19,7 +34,7 @@ $(document).ready(function () {
             link.href = canvas.toDataURL("image/png");
             link.target = '_blank';
             link.click();
-        });
+        }); */
     });
 
    
