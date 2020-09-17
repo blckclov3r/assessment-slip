@@ -2,19 +2,11 @@
 
 $(document).ready(function () {
 
-    var specialElementHandlers = {
-        "#editor": function (element, renderer) {
-            return true;
-        }
-    };
+
+
 
     $("#mButton").click(function () {
-       /* var doc = new jsPDF();
-        doc.fromHTML($("#target").html(), 0, 0, {
-            "width": 100,
-            "elementHandlers": specialElementHandlers
-        });
-        doc.save("save-file.pdf"); */
+ 
 
         html2canvas(document.getElementById("mContainer")).then(function (canvas) {
             var link = document.createElement("a");
@@ -24,8 +16,8 @@ $(document).ready(function () {
             link.target = '_blank';
             link.click();
         }); 
-
-       /* var container = document.getElementById("target");; // full page 
+         
+       /*  var container = document.getElementById("target");; 
         html2canvas(container, { allowTaint: true }).then(function (canvas) {
 
             var link = document.createElement("a");
@@ -35,6 +27,8 @@ $(document).ready(function () {
             link.target = '_blank';
             link.click();
         }); */
+
+            
     });
 
    
