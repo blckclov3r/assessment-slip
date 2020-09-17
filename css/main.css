@@ -41,9 +41,10 @@ img.uvseal {
 }
 
 .container-fluid {
+	padding: 0 4rem;
 	background: #fff;
-
-
+	margin: 0px auto;
+	height: 100%;
 }
 
 .container{
