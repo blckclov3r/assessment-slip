@@ -54,7 +54,7 @@ img.uvseal {
 }
 
 .fr1-col {
-	border: 2px solid #999;
+	border: 2px solid #666;
 	border-radius: 18px;
 	margin-bottom: 3rem;
 }
@@ -97,9 +97,7 @@ thead tr th{
 	border: 2px solid #eee;
 }
 
-.border-lines{
 
-}
 
 
 .studentNo{
@@ -131,7 +129,7 @@ thead tr th{
 .fr2-col {
 	border-left: none !important;
 	border-bottom: none !important;
-	border: 2px solid #999;
+	border: 2px solid #666;
 	border-radius: 18px;
 }
 
@@ -213,7 +211,7 @@ tfoot {
 	margin-left: 45px;
 	font: bold 11pt Verdana;
 	line-height: 36px;
-	color: #333
+	color: #666;
 }
 
 .text:before {
@@ -227,9 +225,7 @@ tfoot {
 		/* content: '(Slip)'*/;
 		position: absolute;
 		margin-left: 8px;
-		font: 10pt Verdana;
 		color: #626262;
-		transform: translate(0, 10px);
 	}
 
 .field {
@@ -237,9 +233,8 @@ tfoot {
 	top: 0;
 	right: 0;
 	width: 50px;
-	height: 36px;
 	color: #fff;
-	background: #4CAF50;
+	background: #03b549;
 	font: 16pt FontAwesome;
 	text-align: center;
 	line-height: 36px;
@@ -248,7 +243,7 @@ tfoot {
 }
 
 .field:hover {
-		background: #43A047
+	background: #006937;
 }
 
 
@@ -283,11 +278,11 @@ tfoot {
 
 
 .table > tbody > tr > td {
-	border-right: 2px solid #006937 !important;
+	border-right: 2px solid #03b549 !important;
 }
 
 .table > tbody > tr > th {
-	border-right: 2px solid #006937 !important;
+	border-right: 2px solid #03b549 !important;
 }
 
 .b-bottom {
