@@ -87,14 +87,18 @@ table td{
 	border: 2px solid #ddd !important;
 }
 
-thead{
-	background: #006937;
+thead {
+	background: #03b549;
 	color: #fff;
-	font-size: 1.1rem;
 	margin: 0;
+	font-size: .9rem !important;
 }
 
-
+thead tr th{
+	font-weight: 500;
+	text-transform: uppercase;
+	border: 2px solid #eee;
+}
 
 .border-lines{
 
