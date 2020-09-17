@@ -293,7 +293,7 @@ tfoot {
 	border-right: none !important;
 	padding: 0;
 	padding-top: .4rem;
-	padding-left: .3rem;
+	padding-left: 1rem;
 }
 
 .table > tbody > tr > td.fr3 {
