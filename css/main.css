@@ -261,6 +261,8 @@ tfoot {
 	display: block;
 	padding: 4px 1rem;
 	border-top-right-radius: 18px;
+	font-size: .9em;
+	font-weight: 600;
 }
 
 .fr2-col table{
